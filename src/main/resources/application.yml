@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql:postgres:5432/tool
+    username: admin
+    password: admin
+  liquibase:
+    change-log: db/changelog/changelog-master.xml
+
+app:
+  minio:
+    url: http://minio:9000
+    login: minioadmin
+    password: minioadmin
+  gotenberg:
+    url: http://gotenberg:3000
